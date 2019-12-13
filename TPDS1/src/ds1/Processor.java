@@ -40,7 +40,7 @@ public class Processor extends Thread{
 	public synchronized void run(){
 		while(true) {
 			try {
-				Thread.sleep(3000);
+				Thread.sleep(1000);
 				process();
 			} catch (Exception e) {
 				// TODO Auto-generated catch block

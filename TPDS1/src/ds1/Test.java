@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.nio.Buffer;
 
 public class Test {
-	
 	public static void main(String[] args) throws IOException {
 		MyBuffer buf = new MyBuffer(100);
 		Lecteur l1 = new Lecteur("lecteur1", "fichier1.txt" ,buf);
@@ -18,7 +17,6 @@ public class Test {
 		
 		p1.start();
 		//p2.start();
-		
-}
+	}
 
 }

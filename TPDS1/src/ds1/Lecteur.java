@@ -25,7 +25,7 @@ public class Lecteur extends Thread{
 		byte[] buffer = new byte[1];
 		int bytes;
 		String word = "";
-		while((bytes = bis.read(buffer))!=-1) {
+		while((bytes = bis.read(buffer)) != -1) {
 			for (int i = 0; i < bytes; i++) {
 				char c = (char)buffer[i];
 				if(!Character.isWhitespace(c)) {
@@ -40,7 +40,6 @@ public class Lecteur extends Thread{
 		return null;
 	}
 	public synchronized void  run() {
-		super.run();
 		try {
 			while(true) {
 				while(buff.size >= buff.getData().size()) {
